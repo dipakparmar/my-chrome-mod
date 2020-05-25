@@ -1,0 +1,24 @@
+{
+    "name": "Dipak's Chrome Mods",
+    "version": "1.0",
+    "description": "The Way I like somethings :)",
+    "permissions": [],
+    "icons": {
+      "16": "images/icon16.png",
+      "32": "images/icon32.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "*://mail.google.com/*"
+        ],
+        "js": [
+          "customize-mail.js"
+        ]
+      }
+      
+    ],
+    "manifest_version": 2
+  }
