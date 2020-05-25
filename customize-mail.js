@@ -1,5 +1,6 @@
 window.onload = function () {
   if (window.location.href.indexOf("#inbox") == -1) {
+      console.log("Falied -1");
     return;
   }
 
@@ -7,9 +8,9 @@ window.onload = function () {
 
     //hide sponsered advts.
     Array.from(document.getElementsByClassName("zA zE")).forEach(function (
-      labelPill
+      cards
     ) {
-      labelPill.style.display = "none";
+      cards.style.display = "none";
     }),
       500;
   });
